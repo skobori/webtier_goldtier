@@ -1,0 +1,51 @@
+<html id="ng-app" data-ng-app="cle" data-ng-cloak>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/" />
+
+        <title data-ng-bind="pageTitle"></title>
+        <!-- <link rel="icon" type="image/png" href="./img/logo/favicon.ico"> -->
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+
+        <!-- LIBRARIES -->
+        <script src="./libs/js/angular.min.js"></script>
+        <script src="./libs/js/angular-touch.min.js"></script>
+        <script src="./libs/js/angular-ui-router.min.js"></script>
+
+        <!-- ANGULAR APP -->
+        <script src="./js/app.min.js"></script>
+    </head>
+
+    <body>
+        <!-- NAVIGATION -->
+        <div class="navbar" ng-controller="NavCtrl">
+            <div class="strip"></div>
+            <ul class="banner">
+                <a href="/"><img src="./images/InnoD/logo_black.png" id="logo"></a>
+            </ul>
+            <ul class="links">
+                <li class="link"><a ui-sref="brendon" ng-class="{ active: isActive('/brendon')}">Brendon</a></li>
+                <li class="link"><a ui-sref="deena" ng-class="{ active: isActive('/deena')}">Deena</a></li>
+                <li class="link"><a ui-sref="henry" ng-class="{ active: isActive('/henry')}">Henry</a></li>
+                <li class="link"><a ui-sref="jerry" ng-class="{ active: isActive('/jerry')}">Jerry</a></li>
+                <li class="link"><a ui-sref="joyce" ng-class="{ active: isActive('/joyce')}">Joyce</a></li>
+                <li class="link"><a ui-sref="krista" ng-class="{ active: isActive('/krista')}">Krista</a></li>
+                <li class="link"><a ui-sref="sonia" ng-class="{ active: isActive('/sonia')}">Sonia</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content" ui-view></div>
+
+        <div class="footer">
+            <div class="footer-text">
+                <a href="http://innovativedesign.club/about" class="footer-text"><img src="./images/InnoD/logo_white.png"></a>
+            </div>
+        </div>
+    </body>
+</html>

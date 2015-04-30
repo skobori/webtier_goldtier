@@ -1,0 +1,67 @@
+.about {
+	height: 290px;
+
+	.divider {
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	background-color: #0592bf;
+	height: 100px;
+	margin-top: 95px;
+	}
+
+	.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border: 2px #e6e6e6 solid;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 50px;
+	margin-left: 100px;
+	margin-top: 25px;
+	z-index: 5;
+	}
+
+	.about-text{
+	display: inline-block;
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 300;
+	width: 58%;
+	z-index: 2;
+	color: #ffffff;
+	}
+}
+
+.work {
+	text-align: center;
+	padding-bottom: 100px;
+
+	.col-1-1 {
+		display: inline-block;
+		width: 90%;
+	}	
+
+	.col-1-2 {
+		display: inline-block;
+		width: 45%;
+	}
+
+	.pic {
+		margin-bottom: 90px;
+		border: 2px #e6e6e6 solid;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		max-height: 875px;
+		max-width: 875px;
+	}
+
+	.gutter {
+		width: 100px;
+		display: inline-block;
+	}
+}
